@@ -1,0 +1,30 @@
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	height: 250px;
+	background-color: #07575b;
+	/* grid */
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 5px;
+	grid-auto-rows: 40px;
+	grid-auto-columns: 40px;
+	grid-auto-flow: column;
+	/* grid */
+	padding: 7px;
+}
+
+.container > div{
+	background-color: #66a5AD;
+	color: aliceblue;
+	text-align: center;
+	padding: 2px;
+	margin: 1px;
+	border: 3px #c4dfe6 solid;
+}
+
+
+

@@ -1,0 +1,41 @@
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	background-color: #07575b;
+	height:300px;
+	margin: 10px;
+	display: flex;
+	/* flex */
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: stretch;
+	align-content: center;
+	/* flex */
+}
+
+.container > div{
+	background-color: #66a5AD;
+	color: aliceblue;
+	text-align: center;
+	padding: 20px;
+	margin: 1px;
+	border: 3px #c4dfe6 solid;
+	/*flex*/
+	/*flex-grow: 1;
+	flex-basis: 200px;
+	flex-shrink: 4;
+	*/
+	flex: 0 1 auto;
+	flex: initial;
+
+}
+
+
+.apple{
+	flex-grow: 3;
+	/*flex-shrink: 3;*/
+	flex: 30%;
+}

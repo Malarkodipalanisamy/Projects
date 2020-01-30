@@ -1,0 +1,66 @@
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	height: 100vh;
+	background-color: #07575b;
+	/* grid */
+	display: grid;
+	grid-template-columns: 1fr;
+		grid-template-rows: 50px 1fr 50px;
+	grid-template-columns: 20% 1fr 20%;
+	grid-template-areas: 
+		"apple apple apple" 
+		"facebook microsoft samsung"
+		"google google google";
+	
+
+	grid-gap: 5px;
+/*	grid-auto-rows: 40px;
+	grid-auto-columns: 40px;
+	grid-auto-flow: column;*/
+	/* grid */
+	padding: 7px;
+	grid-auto-rows: 70px;
+}
+
+.container > div{
+	background-color: #66a5AD;
+	color: aliceblue;
+	text-align: center;
+	padding: 2px;
+	/*margin: 1px;
+	border: 3px #c4dfe6 solid;*/
+}
+
+#apple{
+	grid-area: apple;
+}
+#facebook{
+	grid-area: facebook;
+}
+#microsoft{
+	grid-area: microsoft;
+}
+#samsung{
+	grid-area: samsung;
+}
+
+#google{
+	grid-area: google;
+}
+
+@media all and (max-width: 700px;){
+	.container{
+	
+			grid-template-areas: 
+			"facebook"
+			"apple"
+			"microsoft"
+			"samsung"
+			"google";
+		grid-template-rows: 50px 100px 1fr 100px 50px;
+	}
+}
+

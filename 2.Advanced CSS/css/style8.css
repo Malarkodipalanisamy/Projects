@@ -1,0 +1,60 @@
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	height: 250px;
+	background-color: #07575b;
+	/* grid */
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: [col1-left]20% 100px 2fr minmax(200px, 1fr);
+	grid-gap: 5px;
+	padding: 7px;
+	grid-template-areas: 
+		"a b c d"
+		"e f g h"
+		"i j k l"
+		"m n o p";
+
+}
+
+.container > div{
+	background-color: #66a5AD;
+	color: aliceblue;
+	text-align: center;
+	padding: 5px;
+	font-size: 20px;
+}
+
+#apple{
+	grid-row-start: 1;
+	grid-column-start: 1;
+	grid-row-end: 3;
+	grid-column-end: 3;
+	/*grid: 1/col1-left/3/3;*/
+}
+
+#facebook{
+	grid-area: 3/3;
+}
+
+#apple1{
+	grid-row-start: 3;
+	grid-column-start: 1;
+	grid-row-end: 5;
+	grid-column-end: 3;
+
+}
+#facebook{
+	grid-row-start: 3;
+	grid-column-start: 3;
+	grid-row-end: 6;
+	grid-column-end: 5;
+
+}
+
+#google1{
+	grid-area: i/p;
+}
+

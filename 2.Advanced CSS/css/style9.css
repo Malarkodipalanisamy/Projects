@@ -1,0 +1,60 @@
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	height: 100vh;
+	background-color: #07575b;
+	/* grid */
+	display: grid;
+	grid-template-rows: repeat(4, 110px);
+	grid-template-columns: repeat(autofill, 500px); 
+	grid-gap: 5px;
+	padding: 7px;
+	align-items: center;
+	justify-items: stretch;
+	align-content: center;
+	justify-content: center;
+}
+
+.container > div{
+	background-color: #66a5AD;
+	color: aliceblue;
+	text-align: center;
+	padding: 2px;
+	margin: 1px;
+	border: 3px #c4dfe6 solid;
+}
+
+#apple{
+	height: 150px;
+}
+
+#microsoft{
+	height: 120px;
+}
+
+#facebook{
+	height: 130px;
+}
+
+#samsung{
+	height: 100px;
+}
+
+#google{
+	height: 90px;
+}
+
+#amazon{
+	height: 20px;
+}
+
+#apple1{
+	height: 60px;
+}
+
+#microsoft{
+	height: 40px;
+}
+
