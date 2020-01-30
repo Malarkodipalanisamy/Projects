@@ -1,0 +1,104 @@
+body {
+	background: url("images/bgimg.jpg") no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.logo {
+	height: 60px;
+	width: 60px;
+}
+.nav li{
+	font-size: 17px;
+	padding: 10px 0;
+	margin-right: 40px;
+	color: white;
+}
+.title{
+	text-align: center;
+	color: white;
+}
+.icon{
+	text-align: center;
+	color: white;
+}
+.container{
+	max-width: 1300px;
+}
+.btn{
+	margin-top: 40px;
+	background-color: rgba(181, 166, 166,0.5);
+	color: white;
+}
+.contact{
+	text-align: center;
+	padding: 45px;
+	font-size: 19px;
+}
+.contact p{
+	padding: 20px 45px;
+	letter-spacing: 1.5px;
+}
+.footer{
+	background-color: rgba(0,0,0,0.5);
+	padding: 20px 10px;
+	margin-top: 30px;
+}
+.footer p{
+	color: white;
+	font-size: 19px;
+	text-align: center;
+}
+@media (max-width: 480px){
+	.title{
+		font-size: 20px;
+	}
+	.logo {
+	height: 35px;
+	width: 60px;
+}
+.bodyimg{
+	width: 210px;
+	height: 210px;
+}
+.icon{
+	margin-top:10px;
+}
+}
+
+@media (min-width: 480px) and (max-width: 768px){
+	.title{
+		font-size: 30px;
+	}
+	.logo {
+	height: 30px;
+	width: 60px;
+}
+.icon{
+	margin-top:30px;
+}
+.bodyimg{
+	width: 250px;
+	height: 250px;
+}
+}
+
+@media (min-width: 768px){
+	.title{
+		padding-left: 20px;
+		padding-top: 50px;
+		font-size: 55px;
+		letter-spacing: 2.5px;
+	}
+	.logo {
+	height: 55px;
+	width: 77px;
+}
+.bodyimg{
+	width: 200px;
+	height: 200px;
+}
+.icon{
+	margin-top:90px;
+}
+}
+
