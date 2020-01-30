@@ -1,0 +1,85 @@
+.jumbotron{
+	height: 600px;
+	background: url(images/gamepic.jpg);
+	background-size: cover;
+}
+
+/*Logo desiging*/
+
+.logo{
+	width: 75px;
+	height: 75px;
+}
+.featured{
+	color: white;
+	padding-top: 60px;
+}
+
+/*adding style to button default classes*/
+
+.featured .btn-default{
+	font-weight: bold;
+	color:white;
+	background-color:#955a44;
+	border-radius: 10px;
+	margin-right: 15px;
+	margin-top: 20px;
+}
+.featured .btn-default:hover{
+	background-color:#753118;
+}
+.trial{
+	text-align:center;
+	padding-top: 20px;
+	color:black;
+}
+.trial h1{
+	padding-bottom: 20px;
+
+}
+.trial img{
+	width: 160px;
+	height:70px;
+	margin-right: 20px;
+}
+.footer{
+	font-size: 20px;
+	text-align: center;
+	margin-top:40px;
+	background-color: #eee;
+	padding:30px;
+}
+
+/*styling the media for 480 and 768px*/
+
+@media(min-width:480px) and (max-width:768px){
+	.jumbotron{
+		height: 400px;
+	}
+	.logo{
+		width: 50px;
+		height: 50px;
+	}
+	.featured{
+		padding-top:20px;
+		text-align: center;
+	}
+	.featured p{
+		font-size: 17px;
+	}
+}
+
+/*Styleing media for max width 480px*/
+
+@media(max-width: 480px){
+	.jumbotron{
+		height: 400px;
+	}
+	.logo{
+		width: 40px;
+		height: 40px;
+	}
+	.featured p, .featured a{
+		font-size: 10px;
+	}
+}
